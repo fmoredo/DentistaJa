@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentistaJá | Login</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=".css/style.css">
+    </head>
+    <body>
+		<h2> DentistaJá - Agendamento </h2>
+        <a href="home.html">
+            <button type="submit" class="btn btn-success col-md-1 md-2 my-3">Home</button>
+        </a>
+		
+        <form action="agenda.php" method="POST">
+		                <div class="col-md-2 my-3">
+                    <label for="uname"><b>Usuário: </b></label>
+                <input type="text" placeholder="usuário" name="login">
+                </div>
+            <div class="form-style">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                         <label for="data">Data</label>
+                        <input type="date" class="form-control" id="data" placeholder="12/12/2012" name="data" required>
+                    </div>
+
+                    <br>
+                        
+                    <div class="form-group col-md-6">
+                        <label for="hora">Hora</label>
+                            <select name="horario" id="Horário" required>
+                                <option select disable> -- Selecione -- </option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+								<option value="11:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                            </select>
+                    </div>
+                    <br>
+                </div>
+                                    <div class="form-group col-md-6">
+                        <label for="procedimento">Procedimento</label>
+                            <select name="procedimento" id="procedimento" required>
+                                <option select disable> -- Selecione -- </option>
+                                <option value="1">LIMPEZA</option>
+                                <option value="2">CLAREAMENTO</option>
+                                <option value="3">EXTRAÇÃO</option>
+                            </select>
+                    </div>
+
+                <br>
+
+                <div class="btn-form">
+                    <input type="submit" class="btn btn-dark" style="margin-left: 10px;" value="Agendar" name="agenda">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

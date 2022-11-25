@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentistaJá | Pagamento</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=".css/style.css">
+</head>
+  
+<body>
+  <a href="home.html">
+    <button type="submit" class="btn btn-success col-md-1 md-2 my-3">Home</button>
+</a>
+    
+  <h2 class="display-5 text-center my-2">Pagamento</h2>
+
+
+
+  <form action="pagamento.php" method="POST">
+
+    <label for="numero">Número do cartão</label><br>
+      <input type="text" name="numero" id="numero" placeholder="Ex: 1234 1234 1234 1234" required>
+
+     <br><br>
+
+     <label for="mes">Mês</label>
+     <select id="mes" data-action="date" name="mes">
+       <option select disable> -- Selecione -- </option>
+      <option value="01">1</option>
+      <option value="02">2</option>
+      <option value="03">3</option>
+      <option value="04">4</option>
+      <option value="05">5</option>
+      <option value="06">6</option>
+      <option value="07">7</option>
+      <option value="08">8</option>
+      <option value="09">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+     </select>
+
+    <br><br>
+
+     <label for="ano">Ano</label>
+     <select id="ano" data-action="date" name="ano">
+       <option select disable value=""> -- Selecione -- </option>
+      <option>2022</option>
+      <option>2023</option>
+      <option>2024</option>
+      <option>2025</option>
+      <option>2026</option>
+      <option>2027</option>
+      <option>2028</option>
+      <option>2029</option>
+      <option>2030</option>
+      <option>2031</option>
+      <option>2032</option>
+      <option>2033</option>
+      <option>2034</option>
+      <option>2035</option>
+      <option>2036</option>
+      <option>2037</option>
+      <option>2038</option>
+     </select>
+
+     <br><br>
+
+          <label for="nome">Nome de Titular</label><br>
+          <input type="text" id="nome" name="nome" required>
+
+     <br><br>
+
+     <label for="codigo">CVV</label><br>
+     <input type="text" id="codigo" pattern="[0-9]{3}" name="cvv" placeholder="Ex:123"required>
+     <br><br>
+
+                     <div class="btn-form">
+                    <input type="submit" class="btn btn-dark" style="margin-left: 10px;" value="Efetuar pagamento" name="pagar">
+                </div>
+
+     <br><br>
+
+    </form>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="js/eventos.js" charset="utf-8"></script>
+
+
+</body>
+
+
+</html>
